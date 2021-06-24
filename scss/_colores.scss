@@ -1,0 +1,47 @@
+$azul:blue;
+$amarillo:yellow;
+$verde:green;
+
+header {
+	background-color:$amarillo;
+	h3{
+	color:$azul;
+	color:$verde;
+	}
+}
+$vista:mobile;
+h1 {
+	@if $vista == mobile{
+	color:$azul;
+	font-size:18px;
+	}
+	@else if $vista == desktop{
+	color:$verde;
+	font-size:22px;
+	}
+}
+@each $color in blue, yellow, black, white{ .#{$color}{
+	color:$color;
+}
+}
+.boton{
+	widht:70px;
+	background-color:white;
+	border-radius:20px;
+	text-align:center;
+	padding:10px;
+	border:1px solid black;
+	font-size:18px;
+	color:black;
+}
+
+.boton-enviar{
+	@extend .boton;
+	background-color:yellow;
+	color:blue;
+}
+.boton-cancelar{
+	@extende .boton;
+	background-color:red;
+	color:yellow;
+}

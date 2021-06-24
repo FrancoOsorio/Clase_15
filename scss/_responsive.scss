@@ -1,0 +1,22 @@
+$grid:grid;
+$flex:flex;
+
+
+@mixin flex-row{
+	display:flex;
+	flex-direction:row;
+}
+
+@mixin flex-col{
+	display:flex;
+	flex-direction:colum;
+}
+
+@mixin flex-row-center{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+header{
+	@include flex-row;
+}

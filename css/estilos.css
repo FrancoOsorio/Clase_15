@@ -1,0 +1,92 @@
+header {
+  background-color: yellow; }
+  header h3 {
+    color: blue;
+    color: green; }
+
+h1 {
+  color: blue;
+  font-size: 18px; }
+
+.blue {
+  color: blue; }
+
+.yellow {
+  color: yellow; }
+
+.black {
+  color: black; }
+
+.white {
+  color: white; }
+
+.boton, .boton-enviar {
+  widht: 70px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 18px;
+  color: black; }
+
+.boton-enviar {
+  background-color: yellow;
+  color: blue; }
+
+.boton-cancelar {
+  @extende .boton;
+  background-color: red;
+  color: yellow; }
+
+header {
+  display: flex;
+  flex-direction: row; }
+
+header h3 {
+  font-size: 18px; }
+
+.encabezado {
+  width: 400px; }
+
+.col-1 {
+  width: 10%; }
+
+.col-2 {
+  width: 20%; }
+
+.col-3 {
+  width: 30%; }
+
+.col-4 {
+  width: 40%; }
+
+.col-5 {
+  width: 50%; }
+
+.col-6 {
+  width: 60%; }
+
+.col-7 {
+  width: 70%; }
+
+.col-8 {
+  width: 80%; }
+
+.col-9 {
+  width: 90%; }
+
+.col-10 {
+  width: 100%; }
+
+@media only screen and (max-width: 768px) {
+  .mobile .container {
+    width: 100%; } }
+
+@media only screen and (max-width: 980px) {
+  .tablet .container {
+    width: 100%; } }
+
+@media only screen and (max-width: 1080px) {
+  .dektop .container {
+    width: 100%; } }
